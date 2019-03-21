@@ -1,10 +1,13 @@
 class FirstTest:
     def __init__(self, arg1, arg2):
-        print(arg1 + " This is arg1 of seld method")
+        '''Try to define vars'''
+        self.arg1 = arg1
+        self.arg2 = arg2
 
     def test(self):
-        print("Function test in class FirstTest is work")
-
-class SecondTest:
-    def test2(self):
-        print("Function test2 in class SecondTest is work")
+        message = (self.arg1 + " - this is arg1!")
+        message2 = (self.arg2 + " - this is arg2")
+        if self.arg2 != '':
+            print("FirstTest class in runnging: " + message + " and " + message2)
+        else:
+            print("FirstTest class in runnging: " + message)
