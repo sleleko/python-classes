@@ -1,6 +1,7 @@
 import main
 
-First = main.FirstTest().test
-Second = main.SecondTest().test2
-print(First)
-print(Second)
+First = main.FirstTest("TestArgument1", "TestArgument2")
+#Two = main.FirstTest("OnlyOneTestArgument")
+
+First.test()
+#Two.test()
